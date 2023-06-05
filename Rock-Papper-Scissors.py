@@ -7,8 +7,14 @@ while (winning > 0 and winning <= 10):
     user_choice = user_choice.lower()
     
     random_choice = random.choice(['rock', 'papper', 'scissors'])
-    
-    
+
+    if user_choice == 'quit':
+        break
+
+    if user_choice != 'rock' or user_choice != 'papper' or user_choice != 'scissors':
+        print("Please choose a correct answer")
+        continue
+
     if user_choice == random_choice:
         print("It's equallity")
         winning -= 1
