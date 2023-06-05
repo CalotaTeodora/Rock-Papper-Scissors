@@ -10,7 +10,7 @@ I've tried to do this in educational scope. Thanks to Kalob ,  I really like Pyt
 * If you lose your points will decrease with 2
 * If you win you will collect 3 points
 * The game will end if you remain with 0 points or less or if you collect 10 points
-* Good lack!!!
+* Good luck!!!
 
 ```
 
