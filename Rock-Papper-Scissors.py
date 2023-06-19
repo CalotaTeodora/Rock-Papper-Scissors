@@ -3,15 +3,15 @@ import random
 winning = 3 # variable that stores the score 
 
 while (winning > 0 and winning <= 10):
-    user_choice = input("What do you choice? (rock, papper, scissors) ")
+    user_choice = input("What do you choice? (rock, paper, scissors) ")
     user_choice = user_choice.lower()
     
-    random_choice = random.choice(['rock', 'papper', 'scissors'])
+    random_choice = random.choice(['rock', 'paper', 'scissors'])
 
     if user_choice == 'quit':
         break
 
-    if user_choice != 'rock' or user_choice != 'papper' or user_choice != 'scissors':
+    if user_choice != 'rock' and user_choice != 'paper' and user_choice != 'scissors':
         print("Please choose a correct answer")
         continue
 
@@ -23,11 +23,11 @@ while (winning > 0 and winning <= 10):
         print("You win!")
         winning += 1
         
-    elif user_choice == 'scissors'  and random_choice == 'papper':
+    elif user_choice == 'scissors'  and random_choice == 'paper':
         print("You win!")
         winning += 1
         
-    elif user_choice == 'papper' and random_choice == 'rock':
+    elif user_choice == 'paper' and random_choice == 'rock':
         print("You win!")
         winning += 1
         
